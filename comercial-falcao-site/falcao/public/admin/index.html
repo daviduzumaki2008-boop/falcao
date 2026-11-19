@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Painel • Comercial Falcão</title>
+<link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/admin/admin.css">
+</head>
+<body>
+<div id="login" class="login" hidden>
+  <form id="loginForm" class="login__box" autocomplete="on">
+    <svg viewBox="0 0 48 48" width="56" height="56" aria-hidden="true"><path fill="#ffc20e" d="M4 4h32l8 8v32H4z"/><path fill="#0c0c0d" d="M12 34 24 14l10 8-6 3 8 3-4 4-10-5-6 5zM30 13l5 4-3 1z"/></svg>
+    <h1>Painel do Comercial Falcão</h1>
+    <p>Entre para gerenciar produtos, ofertas e textos do site.</p>
+    <label>Usuário<input name="username" autocomplete="username" required autofocus></label>
+    <label>Senha<input name="password" type="password" autocomplete="current-password" required></label>
+    <p class="err" id="loginErr" role="alert" hidden></p>
+    <button class="btn btn--y" type="submit">Entrar</button>
+    <a href="/" class="link">← Voltar ao site</a>
+  </form>
+</div>
+
+<div id="app" class="app" hidden>
+  <aside class="side" id="side">
+    <div class="side__brand"><svg viewBox="0 0 48 48" width="34" height="34" aria-hidden="true"><path fill="#ffc20e" d="M4 4h32l8 8v32H4z"/><path fill="#0c0c0d" d="M12 34 24 14l10 8-6 3 8 3-4 4-10-5-6 5zM30 13l5 4-3 1z"/></svg><b>Falcão • Painel</b></div>
+    <nav id="menu"></nav>
+    <div class="side__foot"><a href="/" target="_blank" rel="noopener" class="btn btn--g">Ver o site ↗</a><button class="btn btn--g" id="logout">Sair</button></div>
+  </aside>
+  <div class="main">
+    <header class="top"><button id="menuBtn" class="menuBtn" aria-label="Menu">☰</button><h1 id="title"></h1><span class="saved" id="saved" role="status"></span></header>
+    <div id="warn"></div>
+    <section id="view" class="view"></section>
+  </div>
+</div>
+
+<dialog id="modal" class="modal"><form id="modalForm" novalidate><header><h2 id="mTitle"></h2><button type="button" class="x" id="mClose" aria-label="Fechar">×</button></header>
+  <div id="mBody" class="mbody"></div><p class="err" id="mErr" role="alert" hidden></p>
+  <footer><button type="button" class="btn btn--g" id="mCancel">Cancelar</button><button type="submit" class="btn btn--y" id="mSave">Salvar</button></footer></form></dialog>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script src="/admin/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>%%TITLE%%</title>
+<meta name="description" content="%%DESC%%">
+<meta name="theme-color" content="#0c0c0d">
+<link rel="canonical" href="%%URL%%">
+<meta name="geo.region" content="BR-MG"><meta name="geo.placename" content="Ipatinga">
+<meta property="og:type" content="website"><meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="%%TITLE%%"><meta property="og:description" content="%%DESC%%">
+<meta property="og:url" content="%%URL%%"><meta property="og:image" content="%%OG_IMAGE%%">
+<link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/css/site.css">
+<script type="application/ld+json">%%LDJSON%%</script>
+</head>
+<body>
+<a class="skip" href="#produtos">Ir para os produtos</a>
+<div id="notice" class="notice" hidden></div>
+
+<header class="header" id="header">
+  <div class="wrap header__in">
+    <a href="#inicio" class="brand" aria-label="Comercial Falcão — início" id="brand"></a>
+    <nav class="nav" id="nav" aria-label="Principal">
+      <a href="#inicio">Início</a><a href="#produtos">Produtos</a><a href="#categorias">Categorias</a>
+      <a href="#sobre">Sobre nós</a><a href="#avaliacoes">Avaliações</a><a href="#contato">Contato</a>
+      <a href="#orcamento" class="btn btn--yellow nav__cta">Solicitar orçamento</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <div class="hero__bg" id="heroBg"></div>
+  <div class="wrap hero__in">
+    <div class="hero__text reveal">
+      <p class="eyebrow">Materiais de construção em Ipatinga</p>
+      <h1 id="heroTitle"></h1>
+      <p class="hero__sub" id="heroSub"></p>
+      <div class="hero__cta">
+        <a href="#produtos" class="btn btn--yellow btn--lg">Conheça nossos produtos</a>
+        <a href="#" class="btn btn--ghost btn--lg" data-wa="Olá! Gostaria de falar com um vendedor.">Fale com um vendedor</a>
+      </div>
+    </div>
+    <ul class="proof reveal" id="proof" aria-label="Destaques da loja"></ul>
+  </div>
+  <div class="hazard" aria-hidden="true"></div>
+</section>
+
+<section class="banners" id="banners" hidden aria-label="Promoções e avisos">
+  <div class="wrap"><div class="slider" id="slider"></div></div>
+</section>
+
+<section class="sec" id="categorias">
+  <div class="wrap">
+    <header class="sec__head reveal"><p class="eyebrow">Categorias</p><h2>Tudo que sua obra precisa</h2>
+      <p>Escolha uma categoria para ver os produtos.</p></header>
+    <div class="cats reveal" id="cats"></div>
+  </div>
+</section>
+
+<section class="sec sec--paper" id="destaques" hidden>
+  <div class="wrap">
+    <header class="sec__head reveal"><p class="eyebrow">Em destaque</p><h2>Produtos em destaque</h2></header>
+    <div class="grid" id="featured"></div>
+  </div>
+</section>
+
+<section class="sec" id="produtos">
+  <div class="wrap">
+    <header class="sec__head reveal"><p class="eyebrow">Catálogo</p><h2>Nossos produtos</h2>
+      <p>Pesquise pelo nome ou filtre por categoria. Para saber preço e disponibilidade, chame no WhatsApp.</p></header>
+    <div class="demo-note" id="demoNote" hidden><strong>Catálogo demonstrativo.</strong> Os itens marcados como “Exemplo” são ilustrativos, sem preço ou estoque. Em breve, o catálogo completo da loja.</div>
+    <div class="tools">
+      <label class="search"><span class="sr">Buscar produtos</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="q" type="search" placeholder="Buscar produto… ex.: cimento, torneira, tinta" autocomplete="off" maxlength="60">
+      </label>
+      <div class="chips" id="chips" role="tablist" aria-label="Filtrar por categoria"></div>
+    </div>
+    <p class="count" id="count" aria-live="polite"></p>
+    <div class="grid" id="grid"></div>
+    <div class="more"><button class="btn btn--dark" id="more" hidden>Ver mais produtos</button></div>
+  </div>
+</section>
+
+<section class="sec sec--dark" id="ofertas">
+  <div class="wrap">
+    <header class="sec__head reveal"><p class="eyebrow">Promoções</p><h2>Ofertas e promoções</h2></header>
+    <div class="offers" id="offers"></div>
+  </div>
+</section>
+
+<section class="sec" id="sobre">
+  <div class="wrap about">
+    <div class="about__text reveal">
+      <p class="eyebrow">Quem somos</p><h2 id="aboutTitle"></h2><p id="aboutText"></p>
+      <a href="#orcamento" class="btn btn--dark">Fale com a gente</a>
+    </div>
+    <ul class="values reveal" id="values"></ul>
+  </div>
+</section>
+
+<section class="sec sec--paper" id="galeria" hidden>
+  <div class="wrap">
+    <header class="sec__head reveal"><p class="eyebrow">Nossa loja</p><h2>Conheça o Comercial Falcão</h2></header>
+    <div class="gallery" id="gallery"></div>
+  </div>
+</section>
+
+<section class="sec sec--dark" id="avaliacoes">
+  <div class="wrap">
+    <header class="sec__head reveal"><p class="eyebrow">Avaliações</p><h2>Quem compra, recomenda</h2></header>
+    <div class="reviews">
+      <div class="score reveal" id="score"></div>
+      <div class="rev-grid" id="reviews"></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="contato">
+  <div class="wrap">
+    <header class="sec__head reveal"><p class="eyebrow">Contato</p><h2>Venha nos visitar ou chame no WhatsApp</h2></header>
+    <div class="contact">
+      <div class="contact__info reveal">
+        <h3 id="cName"></h3>
+        <ul class="info" id="info"></ul>
+        <div class="contact__btns" id="cBtns"></div>
+        <form class="quote" id="orcamento" novalidate>
+          <h3>Solicitar orçamento</h3>
+          <p class="quote__hint">Conte o que você precisa e continue a conversa pelo WhatsApp.</p>
+          <label>Seu nome<input name="nome" required minlength="2" maxlength="80" autocomplete="name"></label>
+          <label>O que você precisa?<textarea name="itens" rows="4" required minlength="5" maxlength="600" placeholder="Ex.: 20 sacos de cimento, 2 m³ de areia e 1 lata de tinta branca"></textarea></label>
+          <p class="err" id="qErr" role="alert" hidden></p>
+          <button class="btn btn--yellow btn--lg" type="submit">Enviar pelo WhatsApp</button>
+        </form>
+      </div>
+      <div class="map reveal"><iframe id="map" title="Mapa da loja Comercial Falcão" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__in">
+    <div><div class="brand" id="fBrand"></div><p id="fDesc"></p><div class="social" id="social"></div></div>
+    <div><h4>Links rápidos</h4><ul>
+      <li><a href="#produtos">Produtos</a></li><li><a href="#categorias">Categorias</a></li><li><a href="#ofertas">Ofertas</a></li>
+      <li><a href="#sobre">Sobre nós</a></li><li><a href="#avaliacoes">Avaliações</a></li><li><a href="#contato">Contato</a></li></ul></div>
+    <div><h4>Atendimento</h4><ul id="fInfo"></ul></div>
+  </div>
+  <div class="wrap footer__bar"><span id="copy"></span></div>
+</footer>
+
+<a href="#" class="wa-float" id="waFloat" data-wa="Olá! Gostaria de tirar uma dúvida." aria-label="Falar pelo WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M12 2.5a9.5 9.5 0 0 0-8.2 14.3L2.5 21.5l4.8-1.2A9.5 9.5 0 1 0 12 2.5Z"/><path fill="currentColor" d="M8.6 7.8c-.4.4-.9 1.2-.5 2.4.6 1.800 2.200 3.600 4 4.600 1.300.7 2.100.5 2.700.1.500-.4.800-.9.700-1.100l-1.900-1-.9.800c-.8-.3-1.800-1.200-2.300-2.200l.7-.9-1-2c-.2-.1-.6-.1-1.500.3Z"/></svg>
+  <span>WhatsApp</span>
+</a>
+
+<dialog id="dlg" class="dlg"><button class="dlg__x" id="dlgX" aria-label="Fechar">×</button><div id="dlgBody"></div></dialog>
+
+<script type="application/json" id="boot">%%BOOT%%</script>
+<script src="/js/site.js" defer></script>
+</body>
+</html>
